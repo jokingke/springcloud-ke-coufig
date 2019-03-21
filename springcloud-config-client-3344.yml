@@ -1,3 +1,4 @@
+#这样直接取不同环境取不到，目前只能在程序中指定
 spring:
   profiles:
     active:
