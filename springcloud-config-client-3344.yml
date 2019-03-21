@@ -1,0 +1,24 @@
+server: 
+  port: 3322
+
+spring:
+  profiles: dev
+  cloud:
+    config:
+      name: springcloud-config-client-3344
+      profile: dev
+      label: master
+      uri: config-server.com  
+
+---
+server: 
+  port: 3355
+  
+spring:
+  profiles: uat
+  cloud:
+    config:
+      name: springcloud-config-client-3344
+      profile: uat
+      label: master
+      uri: config-server.com
